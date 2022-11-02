@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frojo"
+        android:name="com.example.myapplication.fragment_rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout="@layout/fragment_rojo"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/famarillo"
+        android:name="com.example.myapplication.fragment_amarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout="@layout/fragment_amarillo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fazul"
+            android:name="com.example.myapplication.fragment_azul"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout="@layout/fragment_azul" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fverde"
+            android:name="com.example.myapplication.fragment_verde"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout="@layout/fragment_verde" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentoEleccion"
+            android:name="com.example.myapplication.fragment_controlador"
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:layout_weight="1"
+            android:layout="@layout/fragment_controlador" />
+
+    </LinearLayout>
+
+</LinearLayout>

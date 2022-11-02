@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_controlador"
+    android:background="@color/fondo">
+
+    <Button
+        android:id="@+id/botonEmpezar"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Empezar Partida"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_boton_empezar"
+        />
+
+    <TextView
+        android:id="@+id/textoPrueba"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
